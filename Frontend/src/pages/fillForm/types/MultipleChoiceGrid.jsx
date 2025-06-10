@@ -196,6 +196,12 @@ export default function MultipleChoiceGrid({ question, value, onChange }) {
     return gridData.selections[rowId];
   };
 
+  // Safely serialize selection to a string value
+  const getSelectionString = (rowId) => {
+    const selection = getSelection(rowId);
+    return selection ? String(selection) : '';
+  };
+
   return (
     <div className={styles.gridContainer}>
       <p>{question.text}</p>
@@ -224,6 +230,7 @@ export default function MultipleChoiceGrid({ question, value, onChange }) {
                       checked={getSelection(row.id) === col.id}
                       onChange={() => handleSelect(row.id, col.id)}
                       className={styles.gridRadioInput}
+                      value={col.id}
                     />
                   </label>
                 </td>
