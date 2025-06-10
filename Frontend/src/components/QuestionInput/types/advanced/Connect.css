@@ -1,0 +1,149 @@
+.connectWrapper {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.connectColumns {
+  display: flex;
+  gap: 30px;
+}
+
+.connectColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connectColumn h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.connectItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.connectInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.connectInput:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.25);
+}
+
+.connectButton {
+  background-color: #e8eaed;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.connectButton:hover:not(:disabled) {
+  background-color: #dadce0;
+}
+
+.connectButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.removeButton:hover {
+  color: #d93025;
+}
+
+.addButton {
+  align-self: flex-start;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 5px;
+}
+
+.addButton:hover {
+  background-color: #e8eaed;
+}
+
+.connectionsPreview {
+  margin-top: 10px;
+}
+
+.connectionsList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connectionItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+}
+
+.connectionText {
+  flex: 1;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.connectionArrow {
+  color: #5f6368;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.removeConnectionButton {
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.removeConnectionButton:hover {
+  color: #d93025;
+}
+
+.noConnections {
+  color: #5f6368;
+  font-style: italic;
+  margin-top: 10px;
+} 

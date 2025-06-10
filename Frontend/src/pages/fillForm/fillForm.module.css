@@ -1,0 +1,380 @@
+.formContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f2fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border-top: 8px solid #673ab7;
+}
+
+.formHeader h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.formHeader p {
+  font-size: 16px;
+  color: #666;
+}
+
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.questionContainer {
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.questionContainer:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.questionContainer:last-child {
+  margin-bottom: 0;
+}
+
+.questionCard {
+  position: relative;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.questionNumber {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #5c6bc0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.questionItem {
+  margin-bottom: 16px;
+}
+
+.questionItem label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #444;
+}
+
+.textInput,
+.dateInput,
+.timeInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.textInput:focus,
+.dateInput:focus,
+.timeInput:focus {
+  outline: none;
+  border-color: #5c6bc0;
+  box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.2);
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radioOption,
+.checkboxOption {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  transition: all 0.2s;
+}
+
+.radioOption:hover,
+.checkboxOption:hover {
+  border-color: #5c6bc0;
+  background-color: #f7f8fd;
+}
+
+.radioOption input[type="radio"],
+.checkboxOption input[type="checkbox"] {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.radioOption label,
+.checkboxOption label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.connectContainer,
+.swapContainer {
+  background-color: #f7f8fd;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.connectContainer h4,
+.gridContainer h4 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.connectContainer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.connectItem {
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.connectItem:hover {
+  border-color: #5c6bc0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.connectSelected {
+  background-color: #5c6bc0;
+  color: white;
+  border-color: #4a59a9;
+}
+
+.connectConnected {
+  border-left: 4px solid #4caf50;
+}
+
+.connectLineDivider {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+
+.connectHelpText {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* Grid component styles */
+.gridContainer {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.gridContainer p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.gridTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.gridTable th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  color: #555;
+  font-weight: 500;
+}
+
+.gridTable td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.gridTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+.gridRadioCell {
+  position: relative;
+}
+
+.gridRadioInput {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.gridSummary {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.gridNoSelection {
+  font-style: italic;
+  color: #666;
+}
+
+.gridSelectionList {
+  padding-left: 20px;
+}
+
+.gridSelectionItem {
+  margin: 6px 0;
+}
+
+.gridHeaderFirstCell {
+  width: 30%;
+  text-align: left;
+}
+
+/* Swap component styles */
+.swap-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.swap-items-container {
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.swap-preview {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.swap-preview h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.swap-preview ol {
+  padding-left: 20px;
+}
+
+.swap-preview li {
+  padding: 6px 0;
+}
+
+.connectNote,
+.swapNote,
+.unsupportedType {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.formActions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.submitContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submitButton {
+  padding: 12px 30px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #5e35b1;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}
+
+.successMessage {
+  text-align: center;
+  margin: 100px auto;
+  padding: 30px;
+  max-width: 500px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2e7d32;
+}
+
+.successMessage h2 {
+  color: #2e7d32;
+  margin-bottom: 16px;
+}
+
+.loading {
+  text-align: center;
+  margin: 100px auto;
+  font-size: 18px;
+  color: #666;
+} 

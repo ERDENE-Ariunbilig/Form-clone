@@ -1,0 +1,128 @@
+.multipleChoiceWrapper {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.optionsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.optionsHint {
+  color: #5f6368;
+  font-size: 14px;
+  margin: 0;
+  font-style: italic;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radioIcon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #5f6368;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radioCircle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #5f6368;
+}
+
+.optionInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.optionInput:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.25);
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.removeButton:hover {
+  color: #d93025;
+}
+
+.addButton {
+  align-self: flex-start;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 5px;
+}
+
+.addButton:hover {
+  background-color: #e8eaed;
+}
+
+.previewSection {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dadce0;
+}
+
+.previewSection h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.optionsPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.previewItem {
+  display: flex;
+  align-items: center;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.radioInput {
+  margin: 0;
+  cursor: pointer;
+}
+
+.radioLabelText {
+  font-size: 14px;
+} 

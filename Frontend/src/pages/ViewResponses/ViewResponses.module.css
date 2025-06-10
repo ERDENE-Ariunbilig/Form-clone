@@ -1,0 +1,38 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.statsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  flex: 1;
+  text-align: center;
+}
+
+.stat h3 {
+  margin: 0 0 0.5rem 0;
+  color: #673ab7;
+}
+
+.stat p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.responsesList {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+} 

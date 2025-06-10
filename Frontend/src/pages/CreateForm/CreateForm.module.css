@@ -1,0 +1,156 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formBuilder {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.dragInstructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #f0f4ff;
+  border-radius: 4px;
+  border-left: 4px solid #673ab7;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.dragIcon {
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  color: #673ab7;
+}
+
+.draggingQuestion {
+  opacity: 1 !important;
+}
+
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.rightActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.addButton {
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #5e35b1;
+}
+
+.saveButton {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-right: 50%; 
+}
+
+.saveButton:hover {
+  background-color: #237027;
+}
+
+.saveButton:disabled {
+  background-color: #a0cfa4;
+  cursor: not-allowed;
+}
+
+.clearButton{
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #d32f2f;
+}
+
+.emptyState {
+  padding: 2rem;
+  text-align: center;
+  color: #757575;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .formBuilder {
+    padding: 1rem;
+  }
+  
+  .formActions {
+    flex-direction: column;
+  }
+  
+  .rightActions {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  
+  .formBuilder {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0.75rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .rightActions {
+    flex-direction: column;
+  }
+  
+  .saveButton, .clearButton, .addButton {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

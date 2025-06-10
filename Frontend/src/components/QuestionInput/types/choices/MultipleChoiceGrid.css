@@ -1,0 +1,94 @@
+.gridWrapper {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gridSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gridSection h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gridInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.gridInput:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.25);
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+
+.removeBtn:hover {
+  color: #d93025;
+}
+
+.addBtn {
+  align-self: flex-start;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #5f6368;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 16px;
+  margin-top: 5px;
+}
+
+.addBtn:hover {
+  background-color: #e8eaed;
+}
+
+.gridPreview {
+  margin-top: 10px;
+}
+
+.gridTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.gridTable th,
+.gridTable td {
+  border: 1px solid #dadce0;
+  padding: 8px;
+  text-align: center;
+}
+
+.gridTable th:first-child,
+.gridTable td:first-child {
+  text-align: left;
+  font-weight: 500;
+} 

@@ -1,0 +1,38 @@
+.sortableItem {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: white;
+  touch-action: none;
+}
+
+.sortableItem:hover .dragHandle {
+  opacity: 1;
+}
+
+.dragHandle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: grab;
+  padding: 3px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  position: relative;
+  z-index: 1;
+  color: #673ab7;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.questionContent {
+  flex: 1;
+  width: 100%;
+} 
