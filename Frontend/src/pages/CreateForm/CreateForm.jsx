@@ -25,7 +25,7 @@ function CreateForm({ logged }) {
   
   const {
     isLoading,
-    formLink,
+    formLinka,
     showFormLinkDialog,
     setShowFormLinkDialog,
     handleSaveForm
@@ -40,7 +40,7 @@ function CreateForm({ logged }) {
       clearForm();
       showNotification('Form cleared', 'info');
     },
-    formLink: formLink,
+    formLink: formLinka,
     showFormLinkDialog: showFormLinkDialog,
     onFormLinkClose: () => setShowFormLinkDialog(false)
   });

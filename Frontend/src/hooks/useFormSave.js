@@ -5,7 +5,7 @@ import { data } from 'react-router-dom';
 
 export function useFormSave(onNotification) {
   const [isLoading, setIsLoading] = useState(false);
-  const [formLink, setFormLink] = useState('');
+  const [formLinka, setFormLinka] = useState('');
   const [showFormLinkDialog, setShowFormLinkDialog] = useState(false);
 
   const validateForm = (title, questions) => {
@@ -58,7 +58,7 @@ export function useFormSave(onNotification) {
       const link = `https://form-clone-three.vercel.app/fill/${data.formId}`;
       onNotification('Form saved successfully!', 'success');
       setShowFormLinkDialog(true);
-      setFormLink(link);
+      setFormLinka(link);
     } catch (error) {
       onNotification('Error saving form: ' + (error.message || 'Unknown error'), 'error');
     } finally {
@@ -68,7 +68,7 @@ export function useFormSave(onNotification) {
   
   return {
     isLoading,
-    formLink,
+    formLinka,
     showFormLinkDialog,
     setShowFormLinkDialog,
     handleSaveForm
