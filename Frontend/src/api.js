@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = import.meta.env.VITE_API_URL || "http://localhost:8000"
+const URL = import.meta.env.VITE_API_URL || "https://form-clone-wpdy.onrender.com"
 
 export async function getUser(id) {
     try {

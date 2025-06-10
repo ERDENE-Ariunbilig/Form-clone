@@ -13,6 +13,7 @@ const corsOptions = {
     "http://localhost:5173", 
     "http://localhost:5174", 
     "http://localhost",
+    "https://form-clone-three.vercel.app",
     process.env.FRONTEND_URL // Vercel frontend URL
   ].filter(Boolean),
   credentials: true,
