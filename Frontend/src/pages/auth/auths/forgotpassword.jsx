@@ -106,7 +106,7 @@ export default function ForgotPassword({ setNotification }) {
               className="reset-input"
             />
             <div className="captcha-box">
-              <ReCAPTCHA sitekey="6LeBF1QrAAAAAOZmbqeQ-HynhQHy7yGzRKeFJTf1" onChange={handleCaptchaChange} />
+              <ReCAPTCHA sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeBF1QrAAAAAOZmbqeQ-HynhQHy7yGzRKeFJTf1"} onChange={handleCaptchaChange} />
             </div>
             <button onClick={handleSendCode} className="send-code-button">Код илгээх</button>
           </>

@@ -101,7 +101,7 @@ export default function Login({ setLogged, setNotification }) {
                     />
                     <div className="captcha-box">
                         <ReCAPTCHA
-                            sitekey="6LeBF1QrAAAAAOZmbqeQ-HynhQHy7yGzRKeFJTf1"
+                            sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeBF1QrAAAAAOZmbqeQ-HynhQHy7yGzRKeFJTf1"}
                             onChange={handleCaptchaChange}
                         />
                     </div>
