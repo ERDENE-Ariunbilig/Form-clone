@@ -55,7 +55,7 @@ export function useFormSave(onNotification) {
     try {
       const data = await saveForm(userId, formData);
       console.log(data)
-      const link = `https://form-clone-three.vercel.app/create/fill/${data.formId}`;
+      const link = `https://form-clone-three.vercel.app/fill/${data.formId}`;
       onNotification('Form saved successfully!', 'success');
       setShowFormLinkDialog(true);
       setFormLink(link);
