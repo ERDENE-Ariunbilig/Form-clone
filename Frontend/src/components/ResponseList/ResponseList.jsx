@@ -44,7 +44,7 @@ function ResponseList({ responses = [] }) {
             {response.responses && response.responses.length > 0 ? (
               response.responses.map((answer, i) => (
                 <div key={i} className="answer">
-                  <div className="question">{answer?.questionId || 'Question ' + (i+1)}</div>
+                  <div className="question">{answer?.question || 'Question ' + (i+1)}</div>
                   <div className="answerText">{formatAnswerValue(answer?.answer)}</div>
                 </div>
               ))
